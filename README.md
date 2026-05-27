@@ -2,7 +2,7 @@
 
 **Zero-trust AI knowledge processing. Data that protects itself.**
 
-Python client for the TIBET Cortex framework. For production use with memory-level security guarantees (mlock, zeroize), use the [Rust crates](https://crates.io/crates/cortex-core).
+Python client for the TIBET Cortex framework. For production use with memory-level security guarantees (mlock, zeroize), use the [Rust crates](https://crates.io/crates/tibet-cortex-core).
 
 ## Install
 
@@ -106,7 +106,7 @@ TIBET     Immutable provenance chain
 
 ## Links
 
-- [Rust crates (crates.io)](https://crates.io/crates/cortex-core)
+- [Rust crates (crates.io)](https://crates.io/crates/tibet-cortex-core)
 - [GitHub](https://github.com/jaspertvdm/tibet-cortex)
 - [TBZ — Authenticated compression](https://pypi.org/project/tbz/)
 
