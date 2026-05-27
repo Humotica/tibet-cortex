@@ -15,7 +15,7 @@ pip install tibet-cortex
 ### JIS — Multi-Dimensional Access Control
 
 ```python
-from cortex import JisClaim, JisPolicy, JisGate
+from tibet_cortex import JisClaim, JisPolicy, JisGate
 
 # Partner in strategy, EU, clearance 3
 claim = JisClaim(
@@ -48,7 +48,7 @@ print(f"Reasons: {[d.reason.value for d in verdict.denials]}")
 ### Envelope — JIS-Gated Data
 
 ```python
-from cortex import Envelope, EnvelopeBlock
+from tibet_cortex import Envelope, EnvelopeBlock
 
 env = Envelope(id="doc_001")
 env.add_block(EnvelopeBlock.new_embedding(b"vector data"))
@@ -65,7 +65,7 @@ assert env.content(accessor_jis_level=3) is not None
 ### Airlock — Controlled Processing
 
 ```python
-from cortex import Airlock
+from tibet_cortex import Airlock
 
 airlock = Airlock()
 
@@ -84,7 +84,7 @@ print(f"Actor: {session.actor}")
 ### Audit — Blackbox-met-Window
 
 ```python
-from cortex import AuditTrail
+from tibet_cortex import AuditTrail
 
 trail = AuditTrail(".cortex/audit.json")
 trail.record_session(session, query_hash="sha256:abc", response_hash="sha256:def")
